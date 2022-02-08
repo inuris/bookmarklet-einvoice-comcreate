@@ -52,7 +52,6 @@ const STATIC = {
 	"lstContract[0].ContractType": "989d79d3-e93e-4b3d-94ac-a93500ae1890"
 };
 const URL = "/Initialization/CustomerCreate";
-const configPreset = [3, 4, 14, 15, 16, 17, 18, 19, 20];
 let comInfo;
 /* Nội dung các template */
 function initTemplate(_comInfo) {
@@ -110,6 +109,18 @@ function initTemplate(_comInfo) {
 			name: "MessagerAdjust",
 			id: setConfigId("MessagerAdjust"),
 			value: '[subject]Hóa đơn điện tử mua hàng hóa, dịch vụ tại ' + _comInfo.comName + '[/subject][body] Kính gửi: Quý khách hàng,<br/>Cảm ơn Quý khách đã mua hàng hóa, sử dụng dịch vụ của $CompanyName.<br/>Hóa đơn điện tử mua hàng hóa, dịch vụ của Quý khách đã được phát hành với các thông tin như sau:<ul><li>Mẫu số: $Newpattern</li><li>Ký hiệu hóa đơn: $NewSerial</li><li>Số hóa đơn: $NewInvMumber</li><li>Trạng thái: Đã điều chỉnh cho hóa đơn số $invNumber</li><li>Tra cứu hóa đơn tại đường link: https://' + _comInfo.comTaxCode + '.vnpt-invoice.com.vn – nhập mã tra cứu: $NewFkey</li></ul>Ghi chú: Hóa đơn điện tử có giá trị pháp lý tương đương với hóa đơn giấy.<br/>Đây là Email tự động, Quý khách vui lòng không trả lời lại Email này.<br/>Giải pháp Hóa đơn điện tử được cung cấp bởi VNPT, Quý khách có nhu cầu sử dụng hóa đơn điện tử cho công ty mình, vui lòng liên hệ Hotline: 18001260.[/body]'
+		},
+		{
+			/* 24 ConfigViewHAIINVVAT VATRate+BehindComma*/
+			name: "ConfigViewHAIINVVAT",
+			id: setConfigId("ConfigViewHAIINVVAT"),
+			value: '{"VATRate":"-1=Không thuế GTGT;0=0%;5=5%;8=8%;10=10%"}'
+		},
+		{
+			/* 26 VATRateView: 0=0;2=2;5=5;8=8;10=10;-1=Không thuế GTGT*/
+			name: "VATRateView",
+			id: setConfigId("VATRateView"),
+			value: '0=0;2=2;5=5;8=8;10=10;-1=Không thuế GTGT'
 		}];
 }
 
