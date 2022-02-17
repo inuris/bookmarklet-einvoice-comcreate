@@ -82,7 +82,7 @@ function initTemplate(_comInfo) {
         /* 24 ConfigViewHAIINVVAT VATRate+BehindComma*/
         name: "ConfigViewHAIINVVAT",
         id: setConfigId("ConfigViewHAIINVVAT"),
-        value: '{"VATRate":"-1=Không thuế GTGT;0=0%;5=5%;8=8%;10=10%","BehindComma":"ProdQuantity=2;ProdPrice=2"}'
+        value: '{"VATRate":"-2=Không kê khai và nộp thuế;-1=Không thuế GTGT;0=0%;5=5%;8=8%;10=10%","BehindComma":"ProdQuantity=2;ProdPrice=2"}'
     },
     {
         /* 25 BehindComma: ProdQuantity=2;ProdPrice=2*/
@@ -94,7 +94,7 @@ function initTemplate(_comInfo) {
         /* 26 VATRateView: 0=0;2=2;5=5;8=8;10=10;-1=Không thuế GTGT*/
         name: "VATRateView",
         id: setConfigId("VATRateView"),
-        value: '0=0;2=2;5=5;8=8;10=10;-1=Không thuế GTGT'
+        value: '0=0;2=2;5=5;8=8;10=10;-2=Không kê khai và nộp thuế;-1=Không thuế GTGT'
     }
 	]
 }
