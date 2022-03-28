@@ -463,12 +463,13 @@ function creatPopup() {
 
 				let url = response.url;
 				document.URL = url;
-				
+				/*
 				comInfo.comId = getComId(url);
 
 				await getComConfig();
 				comInfo.template = initTemplate(comInfo);
 				await processPreset(comInfo);
+				*/
 			} else {
 				alert("Lỗi: Thiếu thông tin");
 			}
